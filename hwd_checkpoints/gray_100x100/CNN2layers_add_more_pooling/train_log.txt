@@ -1,0 +1,73 @@
+
+Epoch 1 loss: 2.2934 - time: 128.87477564811707s
+✅ Saved new best model (min = 2.2934)
+
+Epoch 2 loss: 2.0885 - time: 124.46505689620972s
+✅ Saved new best model (min = 2.0885)
+
+Epoch 3 loss: 1.8307 - time: 123.4321129322052s
+✅ Saved new best model (min = 1.8307)
+
+Epoch 4 loss: 1.5375 - time: 113.22302532196045s
+✅ Saved new best model (min = 1.5375)
+
+Epoch 5 loss: 1.2382 - time: 120.10361504554749s
+✅ Saved new best model (min = 1.2382)
+
+Epoch 6 loss: 0.9957 - time: 121.84980940818787s
+✅ Saved new best model (min = 0.9957)
+
+Epoch 7 loss: 0.7957 - time: 124.86523342132568s
+✅ Saved new best model (min = 0.7957)
+
+Epoch 8 loss: 0.6503 - time: 123.95286583900452s
+✅ Saved new best model (min = 0.6503)
+
+Epoch 9 loss: 0.5296 - time: 121.56222581863403s
+✅ Saved new best model (min = 0.5296)
+
+Epoch 10 loss: 0.4764 - time: 125.26017713546753s
+✅ Saved new best model (min = 0.4764)
+
+Epoch 11 loss: 0.4267 - time: 126.77381086349487s
+✅ Saved new best model (min = 0.4267)
+
+Epoch 12 loss: 0.3641 - time: 119.6426568031311s
+✅ Saved new best model (min = 0.3641)
+
+Epoch 13 loss: 0.3050 - time: 118.36642122268677s
+✅ Saved new best model (min = 0.3050)
+
+Epoch 14 loss: 0.2195 - time: 123.59208869934082s
+✅ Saved new best model (min = 0.2195)
+
+Epoch 15 loss: 0.1917 - time: 123.43423748016357s
+✅ Saved new best model (min = 0.1917)
+
+Epoch 16 loss: 0.1927 - time: 115.53537273406982s
+⚠️ No improvement. EarlyStopping counter: 1/5
+
+Epoch 17 loss: 0.1779 - time: 118.52412223815918s
+✅ Saved new best model (min = 0.1779)
+
+Epoch 18 loss: 0.1507 - time: 116.81875395774841s
+✅ Saved new best model (min = 0.1507)
+
+Epoch 19 loss: 0.1119 - time: 122.98570537567139s
+✅ Saved new best model (min = 0.1119)
+
+Epoch 20 loss: 0.0902 - time: 121.61231875419617s
+✅ Saved new best model (min = 0.0902)
+Finished Training in: 2435.108888864517s
+
+
+============================================================
+Training Summary
+============================================================
+Time: 40m 35s
+Best Validation Accuracy: 61.9083
+
+Optimizer: Adam - {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': False, 'maximize': False, 'foreach': None, 'capturable': False, 'differentiable': False, 'fused': None, 'params': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+Loss Function: CrossEntropyLoss
+============================================================
+

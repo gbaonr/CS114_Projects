@@ -1,0 +1,61 @@
+
+Epoch 1 loss: 2.2753 - time: 120.45523834228516s
+✅ Saved new best model (min = 2.2753)
+
+Epoch 2 loss: 2.0371 - time: 112.48075842857361s
+✅ Saved new best model (min = 2.0371)
+
+Epoch 3 loss: 1.7933 - time: 111.6379702091217s
+✅ Saved new best model (min = 1.7933)
+
+Epoch 4 loss: 1.5124 - time: 117.75017857551575s
+✅ Saved new best model (min = 1.5124)
+
+Epoch 5 loss: 1.2406 - time: 108.47356462478638s
+✅ Saved new best model (min = 1.2406)
+
+Epoch 6 loss: 1.0344 - time: 108.45895338058472s
+✅ Saved new best model (min = 1.0344)
+
+Epoch 7 loss: 0.8591 - time: 117.05124616622925s
+✅ Saved new best model (min = 0.8591)
+
+Epoch 8 loss: 0.7105 - time: 113.03302669525146s
+✅ Saved new best model (min = 0.7105)
+
+Epoch 9 loss: 0.6006 - time: 113.67850852012634s
+✅ Saved new best model (min = 0.6006)
+
+Epoch 10 loss: 0.4931 - time: 118.73508548736572s
+✅ Saved new best model (min = 0.4931)
+
+Epoch 11 loss: 0.4120 - time: 109.54245924949646s
+✅ Saved new best model (min = 0.4120)
+
+Epoch 12 loss: 0.3570 - time: 117.47147870063782s
+✅ Saved new best model (min = 0.3570)
+
+Epoch 13 loss: 0.3305 - time: 109.22866940498352s
+✅ Saved new best model (min = 0.3305)
+
+Epoch 14 loss: 0.2778 - time: 116.57470393180847s
+✅ Saved new best model (min = 0.2778)
+
+Epoch 15 loss: 0.2210 - time: 113.28724122047424s
+✅ Saved new best model (min = 0.2210)
+
+Epoch 16 loss: 0.1911 - time: 110.2998034954071s
+✅ Saved new best model (min = 0.1911)
+
+Epoch 17 loss: 0.1604 - time: 108.25064158439636s
+✅ Saved new best model (min = 0.1604)
+
+Epoch 18 loss: 0.1450 - time: 108.05864596366882s
+✅ Saved new best model (min = 0.1450)
+
+Epoch 19 loss: 0.1222 - time: 112.08167338371277s
+✅ Saved new best model (min = 0.1222)
+
+Epoch 20 loss: 0.1050 - time: 114.65788698196411s
+✅ Saved new best model (min = 0.1050)
+Finished Training in: 2261.433861732483s
