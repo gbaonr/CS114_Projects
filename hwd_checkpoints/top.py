@@ -65,6 +65,9 @@ if __name__ == "__main__":
     list10k = sorted(zip(results10k_, score10k), key=lambda x: x[1], reverse=True)
     list2k = sorted(zip(results2k_, score2k), key=lambda x: x[1], reverse=True)
 
+    if args.top > len(list2k) or args.top > len(list10k):
+        args.top = min(len(list2k), len(list10k))
+
     if args.set == "2k":
         print_table("Top 2k Results", list2k[: args.top])
     elif args.set == "10k":
