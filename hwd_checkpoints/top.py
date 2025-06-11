@@ -20,9 +20,6 @@ def remove_ungraded(results):
     finals = []
     for res in results:
         files = os.listdir(os.path.dirname(res))
-        print(files)
-        print()
-
         if "predict_2k.txt" not in files or "predict_10k.txt" not in files:
             finals.append(res)
     return finals
