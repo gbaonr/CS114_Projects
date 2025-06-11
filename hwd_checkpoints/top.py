@@ -16,6 +16,18 @@ def get_score(results):
     return scores
 
 
+def remove_ungraded(results):
+    finals = []
+    for res in results:
+        files = os.listdir(os.path.dirname(res))
+        print(files)
+        print()
+
+        if "predict_2k.txt" not in files or "predict_10k.txt" not in files:
+            finals.append(res)
+    return finals
+
+
 def print_table(title, data_list):
     print("|\n" * 2)
     print(f"## {title}")
@@ -57,6 +69,8 @@ if __name__ == "__main__":
     results10k = glob.glob("*/*/*predict_10k*.txt")
     results2k = [r for r in results2k if "no_submit" not in r]
     results10k = [r for r in results10k if "no_submit" not in r]
+    results2k = remove_ungraded(results2k)
+    results10k = remove_ungraded(results10k)
     score2k = get_score(results2k)
     score10k = get_score(results10k)
     results2k_ = [os.path.dirname(r) for r in results2k]
