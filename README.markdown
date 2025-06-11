@@ -14,7 +14,7 @@ This repository contains the final project for the CS114 Machine Learning course
 hwd_checkpoints
     ├── dataset1 (named based on input preprocessing for the model)
     │   ├── model1 (model trained on this dataset)
-    │   │   ├── handwritten-digits-classifier.ipynb
+    │   │   ├── <file-name>.ipynb: Notebook file to train model
     │   │   ├── predict_2k_<submit_id>_<score>.txt: prediction results on the 2k dataset
     │   │   ├── predict_10k_<submit_id>_<score>.txt: prediction results on the 10k dataset
     │   │   ├── best_model.pth: saved file of the best model
@@ -32,7 +32,7 @@ hwd_checkpoints
   python top.py --top <X> --set <Y>
   ```
   Where:
-  - `X`: An integer specifying the number of top results to display (default is 4).
+  - `X`: An integer specifying the number of top results to display (default is all).
   - `Y`: A string, either `"2k"`, `"10k"`, or `"all"`, to select the dataset for display (default is `"all"`).
 
 ## Part 2: Scores Prediction Based on Wecode Practical Score
