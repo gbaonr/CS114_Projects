@@ -1,0 +1,24 @@
+============================================================
+Training Summary
+============================================================
+Time: 121m 10s
+Best Validation Accuracy: 0.6061
+
+Optimizer: Adam - {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': False, 'maximize': False, 'foreach': None, 'capturable': False, 'differentiable': False, 'fused': None, 'params': [0, 1]}
+Loss Function: CrossEntropyLoss
+
+Transforms:
+  train:
+    - Grayscale(num_output_channels=3)
+    - Resize(size=[224, 224], interpolation=InterpolationMode.BILINEAR, antialias=True)
+    - ToImage()
+    - ToDtype(scale=True)
+    - Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)
+  val:
+    - Grayscale(num_output_channels=3)
+    - Resize(size=[224, 224], interpolation=InterpolationMode.BILINEAR, antialias=True)
+    - ToImage()
+    - ToDtype(scale=True)
+    - Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225], inplace=False)
+============================================================
+
