@@ -67,8 +67,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    results2k = glob.glob("*/*/*predict_2k*.txt")
-    results10k = glob.glob("*/*/*predict_10k*.txt")
+    results2k = glob.glob("*/*/*predict*2k*.txt")
+    results10k = glob.glob("*/*/*predict*10k*.txt")
+
     results2k = [r for r in results2k if "no_submit" not in r]
     results10k = [r for r in results10k if "no_submit" not in r]
     results2k = remove_ungraded(results2k)
