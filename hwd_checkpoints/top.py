@@ -32,15 +32,20 @@ def print_table(title, data_list):
         print("Không có dữ liệu để hiển thị.")
         return
 
+    index_col_width = max(len(str(len(data_list))), len("Index"))
+
     max_res_len = max(len(res) for res, _ in data_list)
     score_col_width = 6
 
-    print(f"{'Folder'.ljust(max_res_len)} | {'Score'.ljust(score_col_width)}")
-    print(f"{'-' * max_res_len}-+-{'-' * score_col_width}")
+    print(
+        f"{'Index'.ljust(index_col_width)} | {'Folder'.ljust(max_res_len)} | {'Score'.ljust(score_col_width)}"
+    )
+    print(f"{'-' * index_col_width}-+-{'-' * max_res_len}-+-{'-' * score_col_width}")
 
-    for res, score in data_list:
-        print(f"{res.ljust(max_res_len)} | {str(score).ljust(score_col_width)}")
-    print("\n")
+    for i, (res, score) in enumerate(data_list):
+        print(
+            f"{str(i+1).ljust(index_col_width)} | {res.ljust(max_res_len)} | {str(score).ljust(score_col_width)}"
+        )
 
 
 if __name__ == "__main__":
@@ -49,7 +54,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--top",
         type=int,
-        default=4,
+        default=0,
         help="Number of top results to display (default: all).",
     )
     parser.add_argument(
@@ -79,6 +84,10 @@ if __name__ == "__main__":
     if args.top > len(list2k) or args.top > len(list10k):
         args.top = min(len(list2k), len(list10k))
 
+    if args.top <= 0:
+        args.top = min(len(list2k), len(list10k))
+
+    # print("".ljust(70, "-"))
     if args.set == "2k":
         print_table("Top 2k Results", list2k[: args.top])
     elif args.set == "10k":
@@ -86,3 +95,5 @@ if __name__ == "__main__":
     else:
         print_table("Top 2k Results", list2k[: args.top])
         print_table("Top 10k Results", list10k[: args.top])
+
+    print("".ljust(70, "-"))
