@@ -86,7 +86,7 @@ if __name__ == "__main__":
         args.top = min(len(list2k), len(list10k))
 
     if args.top <= 0:
-        args.top = min(len(list2k), len(list10k))
+        args.top = max(len(list2k), len(list10k)) + 2
 
     # print("".ljust(70, "-"))
     if args.set == "2k":

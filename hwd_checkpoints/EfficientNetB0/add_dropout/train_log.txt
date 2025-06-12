@@ -1,0 +1,76 @@
+
+Epoch 1 loss: 2.1187 - time: 89.58663201332092s
+✅ Saved new best model (min = 2.1187)
+
+Epoch 2 loss: 1.7836 - time: 89.76983070373535s
+✅ Saved new best model (min = 1.7836)
+
+Epoch 3 loss: 1.6296 - time: 94.8721513748169s
+✅ Saved new best model (min = 1.6296)
+
+Epoch 4 loss: 1.5379 - time: 94.57368993759155s
+✅ Saved new best model (min = 1.5379)
+
+Epoch 5 loss: 1.4695 - time: 89.3435697555542s
+✅ Saved new best model (min = 1.4695)
+
+Epoch 6 loss: 1.4290 - time: 93.82230997085571s
+✅ Saved new best model (min = 1.4290)
+
+Epoch 7 loss: 1.3916 - time: 90.44373989105225s
+✅ Saved new best model (min = 1.3916)
+
+Epoch 8 loss: 1.3561 - time: 91.41719198226929s
+✅ Saved new best model (min = 1.3561)
+
+Epoch 9 loss: 1.3353 - time: 90.29936337471008s
+✅ Saved new best model (min = 1.3353)
+
+Epoch 10 loss: 1.3098 - time: 93.50714898109436s
+✅ Saved new best model (min = 1.3098)
+
+Epoch 11 loss: 1.3009 - time: 89.32079458236694s
+✅ Saved new best model (min = 1.3009)
+
+Epoch 12 loss: 1.2874 - time: 91.44100832939148s
+✅ Saved new best model (min = 1.2874)
+
+Epoch 13 loss: 1.2853 - time: 89.70172619819641s
+✅ Saved new best model (min = 1.2853)
+
+Epoch 14 loss: 1.2822 - time: 88.0398051738739s
+✅ Saved new best model (min = 1.2822)
+
+Epoch 15 loss: 1.2616 - time: 87.496248960495s
+✅ Saved new best model (min = 1.2616)
+
+Epoch 16 loss: 1.2506 - time: 87.8897123336792s
+✅ Saved new best model (min = 1.2506)
+
+Epoch 17 loss: 1.2485 - time: 88.70472478866577s
+✅ Saved new best model (min = 1.2485)
+
+Epoch 18 loss: 1.2304 - time: 92.05409407615662s
+✅ Saved new best model (min = 1.2304)
+
+Epoch 19 loss: 1.2210 - time: 94.71177458763123s
+✅ Saved new best model (min = 1.2210)
+
+Epoch 20 loss: 1.2018 - time: 90.24828839302063s
+✅ Saved new best model (min = 1.2018)
+Finished Training in: 30m 19s
+
+
+
+============================================================
+Training Summary
+============================================================
+Time: 30m 19s
+Best Validation Accuracy: 65.0148
+
+Optimizer: Adam - {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': False, 'maximize': False, 'foreach': None, 'capturable': False, 'differentiable': False, 'fused': None, 'params': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212]}
+Loss Function: CrossEntropyLoss
+============================================================
+Save on: 22h33p - 11/06/2025 
+
+
