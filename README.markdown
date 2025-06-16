@@ -29,11 +29,10 @@ hwd_checkpoints
 
 - **top.py Script**: This script aggregates and compares the results of the experimented models. Usage:
   ```bash
-  python top.py --top <X> --set <Y>
+  python top.py --top <X>
   ```
   Where:
   - `X`: An integer specifying the number of top results to display (default is all).
-  - `Y`: A string, either `"2k"`, `"10k"`, or `"all"`, to select the dataset for display (default is `"all"`).
 
 ## Part 2: Scores Prediction Based on Wecode Practical Score
 
