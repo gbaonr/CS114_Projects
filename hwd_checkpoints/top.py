@@ -107,14 +107,21 @@ if __name__ == "__main__":
     for f, s, i in zip(folders, scores, ids):
         # Tách phần score 2k
         score_2k = s.split("/")[0].strip()
+        score_10k = s.split("/")[1].strip()
         try:
-            score_num = int(score_2k)
+            score_num = int(score_10k)
         except ValueError:
-            score_num = -1  # Nếu không phải số, gán giá trị thấp nhất để nó nằm cuối
+            score_num = 0
+        try:
+            score_num += int(score_2k)
+        except ValueError:
+            score_num += 0
+
         combined.append((score_num, f, s, i))
 
     # Sắp xếp theo score giảm dần
     combined_sorted = sorted(combined, key=lambda x: x[0], reverse=True)
+    # combined_sorted = sorted(combined, key=lambda x: x[1].lower(), reverse=True) # sort by folder name
 
     # Tách ra 3 list mới
     folders = [c[1] for c in combined_sorted]
