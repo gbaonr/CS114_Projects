@@ -19,7 +19,7 @@ merged_df["TH"] = pd.to_numeric(merged_df["TH"], errors='coerce')
 merged_df["CK"] = pd.to_numeric(merged_df["CK"], errors='coerce')
 
 # Tính TBTL
-merged_df["TBTL"] = 0.20 * merged_df["QT"] + 0.40 * merged_df["TH"] + 0.40 * merged_df["CK"]
+merged_df["TBTL"] = 0.1 * merged_df["QT"] + 0.6 * merged_df["TH"] + 0.3 * merged_df["CK"]
 
 
 # Chọn 2 cột: hash và TBTL để xuất ra file mới
