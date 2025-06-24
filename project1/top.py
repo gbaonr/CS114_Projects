@@ -90,13 +90,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    folder = os.getcwd()
-    if os.path.basename(folder) != "hwd_checkpoints":
-        folders = glob.glob("hwd_checkpoints/*/*")
-        # print("Please run this script from the 'hwd_checkpoints' directory.")
-        # exit(1)
-    else:
-        folders = glob.glob("*/*")
+    folders = glob.glob("*/*")
     folders = [f for f in folders if os.path.isdir(f)]
     folders = [f for f in folders if "no_submit" not in f]
 
@@ -121,7 +115,9 @@ if __name__ == "__main__":
 
     # Sắp xếp theo score giảm dần
     combined_sorted = sorted(combined, key=lambda x: x[0], reverse=True)
-    # combined_sorted = sorted(combined, key=lambda x: x[1].lower(), reverse=True) # sort by folder name
+    # combined_sorted = sorted(
+    #     combined, key=lambda x: x[1].lower(), reverse=False
+    # )  # sort by folder name
 
     # Tách ra 3 list mới
     folders = [c[1] for c in combined_sorted]

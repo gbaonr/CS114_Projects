@@ -11,28 +11,33 @@ This repository contains the final project for the CS114 Machine Learning course
 - **Directory Structure**: The `hwd_checkpoints` directory stores the experimental results with the following structure:
 
 ```
-hwd_checkpoints
-    ├── dataset1 (named based on input preprocessing for the model)
-    │   ├── model1 (model trained on this dataset)
+project1
+    ├── Model 1 (model used)
+    │   ├── version_1 (The way we transform data, config and optimize model)
     │   │   ├── <file-name>.ipynb: Notebook file to train model
     │   │   ├── predict_2k_<submit_id>_<score>.txt: prediction results on the 2k dataset
     │   │   ├── predict_10k_<submit_id>_<score>.txt: prediction results on the 10k dataset
-    │   │   ├── best_model.pth: saved file of the best model
     │   │   ├── train_log.txt: log file of the training process
-    │   ├── model2
+    │   ├── version_2
     │   ├── ...
-    │   ├── modeln
-    ├── dataset2
-    ├── dataset3
+    │   ├── version_n
+    ├── Model 2
+    ├── Model 3
     ├── top.py
+    ├── format_train_data.py
 ```
 
 - **top.py Script**: This script aggregates and compares the results of the experimented models. Usage:
+
   ```bash
   python top.py --top <X>
   ```
+
   Where:
+
   - `X`: An integer specifying the number of top results to display (default is all).
+
+- **format_train_data.py Script**: This script is used to split train-val data for some versions of models
 
 ## Part 2: Scores Prediction Based on Wecode Practical Score
 
