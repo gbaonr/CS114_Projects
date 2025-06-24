@@ -84,15 +84,10 @@ Xây dựng mô hình dự đoán điểm số cho sinh viên (điểm TH, quá 
 
 Dữ liệu đầu vào gồm 4 file CSV:
 
-- **anonymized.csv:** Thông tin chi tiết về các lần nộp bài
+- **anonimized.csv:** Thông tin chi tiết về các lần nộp bài
 - **qt-public.csv:** Điểm quá trình thật
 - **th-public.csv:** Điểm thực hành thật
 - **ck-public.csv:** Điểm cuối kỳ thật
-
-Các cột chính:
-
-- `assignment_id`, `problem_id`, `username`, `is_final`, `status`, `pre_score`, `coefficient`, `created_at`, `updated_at`, `judgement`
-- `hash`, `diemqt`, `TH`, `CK`
 
 ### 🎯 **Yêu cầu đầu ra**
 
@@ -114,28 +109,43 @@ Ví dụ:
 ```
 project2/
 ├── ck-public/
-│   └── 33_features_no_corr_drop/
-│       ├── notebook_ck.ipynb
-│       └── results/
-│           ├── <model>_<id>_<score>.txt
+│   ├── 33_features_no_corr_drop/ # ở cấp folder này, có folder là add_assignment_df, là kết quả được cải thiện sau vấn đáp
+│   │    ├── notebook_ck.ipynb
+│   │    └── results/
+│   │        ├── <model>_<id>_<score>.txt #  # có 2 hoặc nhiều model , ví dụ : catb_273142_37.txt
+│   ├──... # còn nhiều folder trong ck-public ở đây chỉ ví dụ 33_features_no_corr_drop
+│
 ├── th-public/
-│   └── 33_features_no_corr_drop/
-│       ├── notebook_th.ipynb
-│       └── results/
-│           ├── <model>_<id>_<score>.txt
+│   ├── 33_features_no_corr_drop/
+│   │    ├── notebook_th.ipynb
+│   │    └── results/
+│   │        ├── <model>_<id>_<score>.txt
+│   ├──...
+│
 ├── qt-public/
-│   └── 33_features_no_corr_drop/
-│       ├── notebook_qt.ipynb
-│       └── results/
-│           ├── <model>_<id>_<score>.txt
+│   ├── 33_features_no_corr_drop/
+│   │   ├── notebook_qt.ipynb
+│   │   └── results/
+│   │        ├── <model>_<id>_<score>.txt
+│   ├──...
+│
 ├── tbtl-public/
-│   └── 33_features_no_corr_drop/
-│       ├── notebook_tbtl.ipynb
-│       └── results/
-│           ├── <model>_<id>_<score>.txt
-└── wecode.data/
-    ├── anonymized.csv
-    ├── ck-public.csv
-    ├── th-public.csv
-    ├── qt-public.csv
+│   ├── 22_features_no_corr_drop/
+│   │    ├── notebook_tbtl.ipynb
+│   │    └── results/
+│   │        ├── <model>_<id>_<score>.txt
+│   ├──tbtl.csv # file tbtl được tính ra từ kết quả tốt nhất từ CK, TH, QT
+│   ├──tbtl.py # file .py để tính ra file tbtl.csv
+│   ├──...
+│
+├── wecode.data/
+│    ├── anonymized.csv
+│    ├── ck-public.csv
+│    ├── th-public.csv
+│    ├── qt-public.csv
+│    ├── tbtl-public.csv # điểm tbtl được tình từ 3 file trên
+│    ├── cal_tbtl.py # file .py để tính ra file tbtl-public.csv
+│
+└── test / # folder chứa những notebook test, hoặc những kết quả được test , không chính thức
+
 ```
