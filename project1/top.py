@@ -84,7 +84,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--top",
         type=int,
-        default=0,
+        default=26,
         help="Number of top results to display (default: all).",
     )
 
